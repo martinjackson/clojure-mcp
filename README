@@ -1,0 +1,18 @@
+
+<u>M</u>odify java's -<u>cp</u>
+This is a group of utility functions to add jars to the java classpath. Items will only be added 
+if they are not already in the classpath.  This way you can place this call to one of these functions 
+at the top of you code and be guarenteed that the underlying java libraries you are relying on can be found.
+
+(import '(org.supercsv.io CsvListReader)) 
+(addFilePathToClasspath "libs/SuperCSV-1.31.jar")
+
+-- OR --
+you are in emacs in interactive clojure mode and you want to add all the jars in your libs/ directory
+
+(addAllJarsToClasspath "libs/")
+
+Martin Jackson 4/18/2008
+
+PS. Yes I am a TRON fan (free access to the users)
+
