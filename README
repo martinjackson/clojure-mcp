@@ -1,5 +1,5 @@
 
-<u>M</u>odify java's -<u>cp</u>
+Modify java's -cp
 This is a group of utility functions to add jars to the java classpath. Items will only be added 
 if they are not already in the classpath.  This way you can place this call to one of these functions 
 at the top of you code and be guarenteed that the underlying java libraries you are relying on can be found.
